@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta property="og:title" content="내 목소리 분석 결과"><meta property="og:description" content="공유받은 목소리의 음높이와 주요 음역, 인식 일치도를 확인하세요.">
+<title>내 목소리 분석 · 공유 리포트</title><link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css">
+<script src="report.js" defer></script><script src="viewer.js" defer></script>
+</head>
+<body><main>
+<header><img src="icon.png" alt="얼굴과 음성 파형 아이콘" width="56" height="56"><div><span class="eyebrow">VOICE INSIGHT</span><h1>내 목소리 분석</h1></div><span class="badge">공유 리포트</span></header>
+<section class="intro"><p class="eyebrow">A VOICE, A STORY</p><h2>목소리에 담긴<br>나만의 음높이.</h2><p>공유받은 목소리의 분석 요약을 살펴보세요.</p></section>
+<section id="status" class="card" role="status"><h2>분석 결과 링크를 열어 주세요.</h2><p>앱에서 ‘분석 결과 공유 → 결과 링크 복사’로 만든 전체 링크가 필요합니다.</p></section>
+<div id="report" hidden>
+<div class="grid"><section class="card hero"><p>대표 음높이 · 중앙값</p><h2 id="median"></h2><p>이번 읽기에서 관측한 기본 주파수</p></section><section class="card"><p>주요 음역 · 유성음의 90%</p><h2 id="range"></h2><p>5–95백분위 범위</p></section></div>
+<section class="card"><h3>자주 사용하는 음</h3><div id="notes"></div><p class="caption">A4 = 440 Hz 기준 · 검출된 유성음 프레임의 비율</p></section>
+<section id="comparison" class="card" hidden><p class="eyebrow">RESEARCH REFERENCE</p><h3 id="profile"></h3><h2 id="difference"></h2><p id="reference"></p><p id="reference-note"></p><a id="source" target="_blank" rel="noopener noreferrer">기준 논문 보기 ↗</a><p class="caption">연구 참고값과의 거리로, 듣기 좋음의 점수가 아닙니다. 성인 이성 매력도 실험의 결과를 모든 목소리에 적용할 수 없습니다.</p></section>
+<section class="card"><p>발음과 전달력</p><h2 id="score"></h2><p>예문 인식 일치도</p><p class="caption">음성 인식 결과와 예문의 문자 일치도를 계산한 참고 지표입니다. 전문적인 발음 진단이나 사람이 느끼는 이해도 점수가 아닙니다.</p></section>
+<button id="share" type="button">이 결과 링크 공유하기</button><p id="share-status" role="status"></p>
+</div>
+<footer><p>녹음 파일과 읽은 문장은 포함되지 않습니다. 결과는 링크에 담겨 있으며 링크를 가진 누구나 볼 수 있습니다. 이미 전달한 링크는 회수하거나 만료시킬 수 없습니다.</p><p>공유자가 제공한 참고용 결과입니다. 링크 내용은 수정될 수 있으며 진위가 검증된 인증서가 아닙니다.</p><a href="https://mrwoodypark.github.io/MyVoice-privacy/" rel="noreferrer">개인정보처리방침</a><p>WoodyyVerse · 내 목소리 분석</p></footer>
+</main></body></html>
